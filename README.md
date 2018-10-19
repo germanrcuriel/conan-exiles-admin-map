@@ -15,11 +15,20 @@ An admin dashboard for Conan Exiles
   - Players
   - Wheels of pain
   - Pippi mod Thespians
-- Yo can zoom it in and out
+- You can zoom it in and out
 - You can get the `TeleportPlayer` command just by clicking in a marker
 - Possibility to filter by guilds or lonely players
 - List of players with their basic information
 - More to come...
+
+## Planned features
+
+- Distribute the application in a cross-platform standalone way using [pkg](https://github.com/zeit/pkg#readme).
+- Add steam family sharing support to detect multiaccounts.
+- Store statistics in an own sqlite database.
+- Translations
+- Autorefresh every n minutes if installed in the server or with an rsync script (or similar)
+- Any more ideas? :P
 
 ### Requirements
 
