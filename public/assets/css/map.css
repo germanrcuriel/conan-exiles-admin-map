@@ -1,0 +1,109 @@
+html, body, #map { width:100%; height:100%; margin:0; padding:0; z-index: 1; background-color: black }
+#slider{ position: absolute; top: 10px; right: 10px; z-index: 5; }
+.leaflet-tooltip { background-color: #000; border-color: #000; color: #fff; transition: .2s opacity; opacity: 0; text-align: center; font-size: 14px }
+.leaflet-tooltip:before { border-top-color: #000; }
+
+@media (min-width: 576px) {
+  #playersList .modal-dialog {
+    max-width: 800px;
+  }
+  #legendList .modal-dialog {
+    max-width: 500px;
+  }
+}
+
+#playersList .modal-body,
+#legendList .modal-body {
+  padding: 0
+}
+#playersList .table,
+#legendList .table,
+#legendList .table tbody {
+  width: 100%;
+}
+#playersList .table th:nth-child(1) {
+  width: 33%;
+}
+#playersList .table th:nth-child(2) {
+  width: 25%;
+}
+#playersList .table th:nth-child(5) {
+  width: 25%;
+}
+#legendList .table tr:nth-child(2) td:nth-child(1) {
+  width: 10%;
+}
+#legendList .table tr:nth-child(2) td:nth-child(2) {
+  width: 5%;
+}
+#legendList .table tr:nth-child(2) td:nth-child(3) {
+  width: 50%;
+}
+#legendList .table tr:nth-child(2) td:nth-child(4) {
+  width: 30%;
+}
+#legendList .legend-list-item {
+  cursor: pointer;
+}
+#legendList .legend-list-item.disabled {
+  background-color: lightgray;
+  color: darkgray;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+.dropdown-item.buildings-filter.active,
+.dropdown-item.buildings-filter:hover,
+.dropdown-item.buildings-filter:active {
+  background-color: blue;
+  color: white !important;
+}
+.dropdown-item.beds-filter.active,
+.dropdown-item.beds-filter:hover,
+.dropdown-item.beds-filter:active {
+  background-color: green;
+  color: white !important;
+}
+.dropdown-item.campfires-filter.active,
+.dropdown-item.campfires-filter:hover,
+.dropdown-item.campfires-filter:active {
+  background-color: orange;
+  color: white !important;
+}
+.dropdown-item.crabpots-filter.active,
+.dropdown-item.crabpots-filter:hover,
+.dropdown-item.crabpots-filter:active {
+  background-color: darkmagenta;
+  color: white !important;
+}
+.dropdown-item.fishnets-filter.active,
+.dropdown-item.fishnets-filter:hover,
+.dropdown-item.fishnets-filter:active {
+  background-color: darkcyan;
+  color: white !important;
+}
+.dropdown-item.pets-filter.active,
+.dropdown-item.pets-filter:hover,
+.dropdown-item.pets-filter:active {
+  background-color: pink;
+  color: black !important;
+}
+.dropdown-item.players-filter.active,
+.dropdown-item.players-filter:hover,
+.dropdown-item.players-filter:active {
+  background-color: red;
+  color: white !important;
+}
+.dropdown-item.pippi-filter.active,
+.dropdown-item.pippi-filter:hover,
+.dropdown-item.pippi-filter:active {
+  background-color: yellow;
+  color: black !important;
+}
+.dropdown-item.wheelsofpain-filter.active,
+.dropdown-item.wheelsofpain-filter:hover,
+.dropdown-item.wheelsofpain-filter:active {
+  background-color: salmon;
+  color: white !important;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Conan Exiles Admin Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.3.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/map.css" />
+  </head>
+  <body onload="init()">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Conan Exiles Admin Map</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item show-all active">
+            <a class="nav-link" onClick="showAll()" href="javascript:void(0);">Ver Todo <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="showPlayerList()" href="javascript:void(0);">Lista de jugadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="showLegendList()" href="javascript:void(0);">Leyenda</a>
+          </li>
+          <li class="nav-item dropdown filters">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filtros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item buildings-filter" onClick="toggleFilter('buildings')">Edificios</a>
+            <a class="dropdown-item beds-filter" onClick="toggleFilter('beds')">Petates / Camas</a>
+            <a class="dropdown-item campfires-filter" onClick="toggleFilter('campfires')">Fogatas / Hogueras</a>
+            <a class="dropdown-item wheelsofpain-filter" onClick="toggleFilter('wheelsofpain')">Ruedas del dolor</a>
+            <a class="dropdown-item players-filter" onClick="toggleFilter('players')">Jugadores</a>
+            <a class="dropdown-item pets-filter" onClick="toggleFilter('pets')">Mascotas</a>
+            <a class="dropdown-item fishnets-filter" onClick="toggleFilter('fishnets')">Trampas para peces</a>
+            <a class="dropdown-item crabpots-filter" onClick="toggleFilter('crabpots')">Trampas para mariscos</a>
+            <a class="dropdown-item pippi-filter" onClick="toggleFilter('pippi/thespians')">Pippi NPCs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <span class="navbar-text mr-auto">Última actualización: <span class="lastupdate"><%= lastupdate %></span></span>
+      <!-- <span class="navbar-text timer">Refrescando en <span class="countdown">05:00</span></span> -->
+    </nav>
+    <div id="map"></div>
+
+    <div class="modal fade" id="playersList" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Lista de jugadores</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-responsive">
+              <thead>
+                <th>Jugador</th>
+                <th>Clan</th>
+                <th>Rango</th>
+                <th>Nivel</th>
+                <th>Última vez online</th>
+              </thead>
+              <tbody class="players-list-table">
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="legendList" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Leyenda</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-hover table-responsive">
+              <tbody class="legend-list-table">
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://npmcdn.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="assets/scripts/colorhash.js"></script>
+    <script src="assets/scripts/map.js"></script>
+    <script>window.locales = <%- JSON.stringify(lang) %></script>
+  </body>
+</html>
