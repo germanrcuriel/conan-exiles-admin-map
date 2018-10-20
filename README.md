@@ -30,6 +30,16 @@ An admin dashboard for Conan Exiles
 - Autorefresh every n minutes if installed in the server or with an rsync script (or similar)
 - Any more ideas? :P
 
+## Installation
+
+- Grab the last release from [releases](releases) page.
+- Unzip the file and place it's contents in your Conan Exiles "Saved" folder (where the `game.db` file is)
+- Open `conan-exiles-admin-map.exe`
+- Go to http://SERVER_IP:3001/ in your preferred browser.
+- Have fun!
+
+## Contributing
+
 ### Requirements
 
 The only requirement so far is node.js.
