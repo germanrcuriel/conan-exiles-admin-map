@@ -1,6 +1,5 @@
 const sqlite = require('sqlite')
 const SmartBuffer = require('smart-buffer').SmartBuffer
-const i18n = require('i18n')
 const queries = require('../../config/sql')
 
 class PetsController {
@@ -21,7 +20,7 @@ class PetsController {
       res.send({ data: data, update: res.database.time })
       await db.close()
     } catch (e) {
-      res.send({ error: req.__('DATABASE_ERROR') })
+      res.send({ error: "There was an error while querying the database" })
     }
   }
 
@@ -42,7 +41,7 @@ function getPetName (pet) {
     return name
   }
 
-  return i18n.__('NO_NAME')
+  return "Unknown"
 }
 
 function getPetInfo (pet) {

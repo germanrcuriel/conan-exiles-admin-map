@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "build": "babel src --out-dir lib && pkg src/index.js -t latest-win-x64 --out-path build -c package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Germán Robledo Curiel <germix@germix.net>",
@@ -12,8 +13,17 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "i18n": "^0.8.3",
     "smart-buffer": "^4.0.1",
     "sqlite": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "pkg": "^4.3.4"
+  },
+  "pkg": {
+    "assets": [
+      "src/views/**/*",
+      "public/**/*"
+    ]
   }
 }

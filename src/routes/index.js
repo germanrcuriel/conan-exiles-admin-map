@@ -4,7 +4,6 @@ module.exports = (app) => {
 
   app.get('/', (req, res) => {
     res.render('index', {
-      lang: req.getCatalog(),
       lastupdate: res.database.time
     })
   })

@@ -19,7 +19,7 @@ class PippiThespiansController {
       res.send({ data: data, update: res.database.time })
       await db.close()
     } catch (e) {
-      res.send({ error: res.__('DATABASE_ERROR') })
+      res.send({ error: "There was an error while querying the database" })
     }
   }
 

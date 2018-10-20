@@ -158,7 +158,7 @@ function onClick (point) {
   input.select()
   document.execCommand('copy')
   input.remove()
-  toastr.success('¡Coordenadas copiadas!')
+  toastr.success('¡TeleportPlayer command copied!')
 }
 
 function createMarker(marker, group) {
@@ -211,7 +211,7 @@ function generateLegendTable (players) {
 
   tableContent += `
     <tr class="guild-list">
-      <th colspan="3" class="text-center">Clanes</th>
+      <th colspan="3" class="text-center">Guilds</th>
     </tr>
   `
 
@@ -227,7 +227,7 @@ function generateLegendTable (players) {
 
   tableContent += `
     <tr class="solo-list">
-      <th colspan="3" class="text-center">Jugadores sin clan</th>
+      <th colspan="3" class="text-center">Players without guild</th>
     </tr>
   `
 
