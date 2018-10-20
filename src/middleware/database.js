@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = (app) => {
 
-  const databaseFile = path.join(app.get('rootFolder'), 'game.db')
+  const databaseFile = path.join(process.cwd(), 'game.db')
 
   app.use((req, res, next) => {
     res.database = {

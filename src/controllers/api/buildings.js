@@ -10,7 +10,7 @@ class BuildingsController {
       const data = await db.all(queries.buildings)
 
       data.map((building) => {
-        building.kind = req.__(building.class) || null
+        building.kind = building.class || null
       })
 
       res.send({ data: data, update: res.database.time })
