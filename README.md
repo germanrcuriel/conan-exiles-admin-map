@@ -6,7 +6,7 @@ An admin dashboard for Conan Exiles
 
 ## Features
 
-- Ability to see the most important stuff place over a map:
+- Ability to see the most important stuff placed over a map:
   - Buildings (Foundations)
   - Bedrolls / Beds
   - Campfires / Bonfires
