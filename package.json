@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "build": "babel src --out-dir lib && pkg src/index.js -t latest-win-x64 --out-path build -c package.json",
+    "build": "babel src --out-dir lib && pkg src/index.js -t latest-win-x64 --out-path build -c package.json && cp src/bindings/win-x64/node_sqlite3.node build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Germán Robledo Curiel <germix@germix.net>",
