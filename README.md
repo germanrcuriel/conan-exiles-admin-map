@@ -31,7 +31,7 @@ An admin dashboard for Conan Exiles
 
 ## Installation
 
-- Grab the last release from [releases](https://github.com/germanrcuriel/conan-exiles-admin-map/releases) page.
+- Grab the latest release from [releases](https://github.com/germanrcuriel/conan-exiles-admin-map/releases) page.
 - Unzip the file and place it's contents in your Conan Exiles "Saved" folder (where the `game.db` file is)
 - Open `conan-exiles-admin-map.exe`.
 - Open port `3001` in server's firewall if needed.
