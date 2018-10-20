@@ -36,7 +36,7 @@ An admin dashboard for Conan Exiles
 - Unzip the file and place it's contents in your Conan Exiles "Saved" folder (where the `game.db` file is)
 - Open `conan-exiles-admin-map.exe`.
 - Open port `3001` in server's firewall if needed.
-- Go to http://SERVER_IP:3001/ in your preferred browser.
+- Go to [http://localhost:3001/](http://localhost:3001/) (replace `localhost` with your server's IP address) in your preferred browser.
 - Have fun!
 
 ## Contributing
