@@ -23,7 +23,6 @@ An admin dashboard for Conan Exiles
 
 ## Planned features
 
-- Distribute the application in a cross-platform standalone way using [pkg](https://github.com/zeit/pkg#readme).
 - Add steam family sharing support to detect multiaccounts.
 - Store statistics in an own sqlite database.
 - Translations
