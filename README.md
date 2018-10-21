@@ -28,6 +28,7 @@ An admin dashboard for Conan Exiles
 - Store statistics in an own sqlite database.
 - Translations
 - Autorefresh every n minutes if installed in the server or with an rsync script (or similar)
+- Custom filters with their own sql queries
 - Any more ideas? :P
 
 ## Installation
