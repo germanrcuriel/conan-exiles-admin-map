@@ -1,7 +1,18 @@
-module.exports = (app) => {
+import applicationMiddleware from './app'
+import authMiddleware from './auth'
+import databaseMiddleware from './database'
+import languageMiddleware from './language'
+import staticMiddleware from './static'
 
-  require('./app')(app)
-  require('./database')(app)
-  require('./static')(app)
+const middleware = (app) => {
+
+  applicationMiddleware(app)
+
+  authMiddleware(app)
+  databaseMiddleware(app)
+  languageMiddleware(app)
+  staticMiddleware(app)
 
 }
+
+export default middleware

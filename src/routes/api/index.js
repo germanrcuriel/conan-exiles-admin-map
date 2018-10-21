@@ -1,4 +1,4 @@
-module.exports = (app) => {
+const apiRoutes = (app) => {
 
   require('./all')(app)
   require('./beds')(app)
@@ -12,3 +12,5 @@ module.exports = (app) => {
   require('./wheelsofpain')(app)
 
 }
+
+export default apiRoutes

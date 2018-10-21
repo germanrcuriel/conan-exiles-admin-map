@@ -1,6 +1,8 @@
-const path = require('path')
-const express = require('express')
+import { join } from 'path'
+import express from 'express'
 
-module.exports = (app) => {
-  app.use('/assets', express.static(path.join(app.get('rootFolder'), 'public/assets')))
+const staticMiddleware = (app) => {
+  app.use('/assets', express.static(join(app.get('rootFolder'), 'public/assets')))
 }
+
+export default staticMiddleware

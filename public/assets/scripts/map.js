@@ -65,7 +65,10 @@ function init() {
 function getTooltipContent (marker) {
   var content = ''
 
-  if (marker.kind) content += marker.kind + '<br/>'
+  if (marker.kind) {
+    marker.kind = language.phrases['items.' + marker.kind] || marker.kind
+    content += marker.kind + '<br/>'
+  }
   if (marker.name) content += marker.name + '<br/>'
   if (marker.info) content += marker.info + '<br/>'
   if (marker.char_name) content += marker.char_name + '<br/>'

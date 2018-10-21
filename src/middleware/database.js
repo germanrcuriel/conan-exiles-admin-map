@@ -1,15 +1,17 @@
-const fs = require('fs')
-const path = require('path')
+import { statSync } from 'fs'
+import config from '../config'
 
-module.exports = (app) => {
+const databaseMiddleware = (app) => {
 
-  const databaseFile = path.join(process.cwd(), 'game.db')
+  const database = config.CONAN_EXILES.database
+
+  app.set('database', database)
 
   app.use((req, res, next) => {
     res.database = {
-      file: databaseFile,
+      file: database,
       time: (() => {
-        var update = fs.statSync(databaseFile)
+        var update = statSync(database)
         update = new Date(update.mtime).toLocaleString()
         return update
       })()
@@ -18,3 +20,5 @@ module.exports = (app) => {
   })
 
 }
+
+export default databaseMiddleware
