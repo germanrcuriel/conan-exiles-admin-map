@@ -24,6 +24,7 @@ An admin dashboard for Conan Exiles
 
 ## Planned features
 
+- Password protection with Basic Auth and a config file.
 - Add steam family sharing support to detect multiaccounts.
 - Store statistics in an own sqlite database.
 - Translations
