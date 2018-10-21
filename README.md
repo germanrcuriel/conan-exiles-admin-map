@@ -38,7 +38,10 @@ An admin dashboard for Conan Exiles
 - Unzip the file and place it's contents in your Conan Exiles "Saved" folder (where the `game.db` file is)
 - Open `conan-exiles-admin-map.exe`.
 - Open port `3001` in server's firewall if needed.
-- Go to [http://localhost:3001/](http://localhost:3001/) (replace `localhost` with your server's IP address) in your preferred browser.
+- Go to [http://localhost:3001/](http://localhost:3001/) (replace `localhost` with your server's IP address) in your preferred browser. Default credentials are:
+    - User: `demo`
+    - Password: `1234`
+- You can also config port, database location, language and enable/disable the basic auth system in `conan-exiles-admin-map.ini` file.
 - Have fun!
 
 ## Contributing
