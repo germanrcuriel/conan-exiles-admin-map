@@ -20,11 +20,11 @@ An admin dashboard for Conan Exiles
 - You can get the `TeleportPlayer` command just by clicking in a marker
 - Possibility to filter by guilds or lonely players
 - List of players with their basic information
+- Protect the access to the tool with users and password through a config file
 - More to come...
 
 ## Planned features
 
-- Password protection with Basic Auth and a config file.
 - Add steam family sharing support to detect multiaccounts.
 - Store statistics in an own sqlite database.
 - Translations
@@ -62,3 +62,15 @@ $ npm start
 ```
 
 You will be noticed when app is running and you will be able to navigate in by browsing to http://localhost:3001
+
+## Changelog
+
+#### v0.0.1 (October 20, 2018)
+
+- First release
+
+#### v0.1.0 (October 21, 2018)
+
+- Added translations to Spanish (es) and English (en)
+- Added Basic Auth to password protect the access
+- Added a configuration file to change language, port, database path and users

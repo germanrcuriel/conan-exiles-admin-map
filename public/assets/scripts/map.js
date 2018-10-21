@@ -161,7 +161,7 @@ function onClick (point) {
   input.select()
   document.execCommand('copy')
   input.remove()
-  toastr.success('¡TeleportPlayer command copied!')
+  toastr.success(language.phrases['ui.teleport_copied'])
 }
 
 function createMarker(marker, group) {
@@ -213,7 +213,7 @@ function generateLegendTable (players) {
   })
 
   tableContent += '<tr class="guild-list">'
-  tableContent += '<th colspan="3" class="text-center">Guilds</th>'
+  tableContent += '<th colspan="3" class="text-center">' + language.phrases['ui.guilds'] + '</th>'
   tableContent += '</tr>'
 
   Object.keys(guilds).forEach(function (name) {
@@ -230,7 +230,7 @@ function generateLegendTable (players) {
   })
 
   tableContent += '<tr class="solo-list">'
-  tableContent += '<th colspan="3" class="text-center">Players without guild</th>'
+  tableContent += '<th colspan="3" class="text-center">' + language.phrases['ui.players_without_guild'] + '</th>'
   tableContent += '</tr>'
 
   Object.keys(solos).forEach(function (name) {

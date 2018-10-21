@@ -17,7 +17,7 @@ const languageMiddleware = (app) => {
   })
 
   app.use((req, res, next) => {
-    res.language = {
+    res.lang = {
       locale: language,
       phrases: polyglot.phrases
     }

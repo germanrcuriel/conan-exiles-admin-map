@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/map.css" />
+    <script>window.language = <%- language %></script>
   </head>
   <body onload="init()">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -19,34 +20,34 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item show-all active">
-            <a class="nav-link" onClick="showAll()" href="javascript:void(0);">View all <span class="sr-only">(current)</span></a>
+            <a class="nav-link" onClick="showAll()" href="javascript:void(0);"><%= lang['ui.view_all'] %> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onClick="showPlayerList()" href="javascript:void(0);">Player list</a>
+            <a class="nav-link" onClick="showPlayerList()" href="javascript:void(0);"><%= lang['ui.player_list'] %></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onClick="showLegendList()" href="javascript:void(0);">Legend</a>
+            <a class="nav-link" onClick="showLegendList()" href="javascript:void(0);"><%= lang['ui.legend'] %></a>
           </li>
           <li class="nav-item dropdown filters">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Filters
+              <%= lang['ui.filters'] %>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item buildings-filter" onClick="toggleFilter('buildings')">Buildings and foundations</a>
-            <a class="dropdown-item beds-filter" onClick="toggleFilter('beds')">Bedrolls and beds</a>
-            <a class="dropdown-item campfires-filter" onClick="toggleFilter('campfires')">Campfires / Bonfires</a>
-            <a class="dropdown-item wheelsofpain-filter" onClick="toggleFilter('wheelsofpain')">Wheels of pain</a>
-            <a class="dropdown-item players-filter" onClick="toggleFilter('players')">Players</a>
-            <a class="dropdown-item pets-filter" onClick="toggleFilter('pets')">Pets</a>
-            <a class="dropdown-item fishnets-filter" onClick="toggleFilter('fishnets')">Fish nets</a>
-            <a class="dropdown-item crabpots-filter" onClick="toggleFilter('crabpots')">Crab pots</a>
-            <a class="dropdown-item pippi-filter" onClick="toggleFilter('pippi/thespians')">Pippi Thespians</a>
+            <a class="dropdown-item buildings-filter" onClick="toggleFilter('buildings')"><%= lang['ui.buildings'] %></a>
+            <a class="dropdown-item beds-filter" onClick="toggleFilter('beds')"><%= lang['ui.beds'] %></a>
+            <a class="dropdown-item campfires-filter" onClick="toggleFilter('campfires')"><%= lang['ui.campfires'] %></a>
+            <a class="dropdown-item wheelsofpain-filter" onClick="toggleFilter('wheelsofpain')"><%= lang['ui.wheels_of_pain'] %></a>
+            <a class="dropdown-item players-filter" onClick="toggleFilter('players')"><%= lang['ui.players'] %></a>
+            <a class="dropdown-item pets-filter" onClick="toggleFilter('pets')"><%= lang['ui.pets'] %></a>
+            <a class="dropdown-item fishnets-filter" onClick="toggleFilter('fishnets')"><%= lang['ui.fish_nets'] %></a>
+            <a class="dropdown-item crabpots-filter" onClick="toggleFilter('crabpots')"><%= lang['ui.crab_pots'] %></a>
+            <a class="dropdown-item pippi-filter" onClick="toggleFilter('pippi/thespians')"><%= lang['ui.pippi_thespians'] %></a>
           </li>
         </ul>
       </div>
     </nav>
     <nav class="navbar fixed-bottom navbar-dark bg-dark">
-      <span class="navbar-text mr-auto">Last update: <span class="lastupdate"><%= lastupdate %></span></span>
+      <span class="navbar-text mr-auto"><%= lang['ui.last_update'] %><span class="lastupdate"><%= lastupdate %></span></span>
       <!-- <span class="navbar-text timer">Refrescando en <span class="countdown">05:00</span></span> -->
     </nav>
     <div id="map"></div>
@@ -55,7 +56,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Player list</h5>
+            <h5 class="modal-title"><%= lang['ui.player_list'] %></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -63,18 +64,18 @@
           <div class="modal-body">
             <table class="table table-responsive">
               <thead>
-                <th>Player</th>
-                <th>Guild</th>
-                <th>Rank</th>
-                <th>Level</th>
-                <th>Last seen online</th>
+                <th><%= lang['ui.player'] %></th>
+                <th><%= lang['ui.guild'] %></th>
+                <th><%= lang['ui.rank'] %></th>
+                <th><%= lang['ui.level'] %></th>
+                <th><%= lang['ui.last_seen_online'] %></th>
               </thead>
               <tbody class="players-list-table">
               </tbody>
             </table>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"><%= lang['ui.close'] %></button>
           </div>
         </div>
       </div>
@@ -83,7 +84,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Legend</h5>
+            <h5 class="modal-title"><%= lang['ui.legend'] %></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -95,7 +96,7 @@
             </table>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"><%= lang['ui.close'] %></button>
           </div>
         </div>
       </div>
@@ -110,6 +111,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="assets/scripts/colorhash.js"></script>
     <script src="assets/scripts/map.js"></script>
-    <script>window.language = <%- language %></script>
   </body>
 </html>

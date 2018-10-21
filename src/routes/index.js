@@ -6,7 +6,8 @@ const routes = (app) => {
 
   app.get('/', (req, res) => {
     res.render('index', {
-      language: JSON.stringify(res.language),
+      lang: res.lang.phrases,
+      language: JSON.stringify(res.lang),
       lastupdate: res.database.time
     })
   })

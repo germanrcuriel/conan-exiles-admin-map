@@ -8,7 +8,7 @@ const authMiddleware = (app) => {
   app.use((req, res, next) => {
     const user = auth(req)
 
-    if (!users) {
+    if (!Object.keys(users).length) {
       return next()
     }
 
