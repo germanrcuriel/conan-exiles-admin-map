@@ -76,12 +76,26 @@ You will be noticed when app is running and you will be able to navigate in by b
 
 ## Changelog
 
-#### v0.0.1 (October 20, 2018)
+#### v0.2.0 (November 1, 2018)
 
-- First release
+- Removed player/guild id from legend
+- Added more filters:
+    - Altars
+    - Animal pens
+    - Chests
+    - Map rooms
+    - Trebuchets
+    - Vaults
+    - Water wells
+    - All Crafting Placeables
+    - All Pippi Placeables
 
 #### v0.1.0 (October 21, 2018)
 
 - Added translations to Spanish (es) and English (en)
 - Added Basic Auth to password protect the access
 - Added a configuration file to change language, port, database path and users
+
+#### v0.0.1 (October 20, 2018)
+
+- First release
