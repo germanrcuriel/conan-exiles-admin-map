@@ -16,7 +16,7 @@ export default {
   "map_rooms": "Salas del mapa",
   "crab_pots": "Trampas para marisco",
   "trebuchets": "Trabuquetes",
-  "vaults": "Cámaras acorazadas",
+  "vaults": "Cámaras",
   "water_wells": "Fuentes de agua",
   "wheels_of_pain": "Ruedas del dolor",
 
