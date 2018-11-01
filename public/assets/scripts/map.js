@@ -213,7 +213,7 @@ function generateLegendTable (players) {
   })
 
   tableContent += '<tr class="guild-list">'
-  tableContent += '<th colspan="3" class="text-center">' + language.phrases['ui.guilds'] + '</th>'
+  tableContent += '<th colspan="2" class="text-center">' + language.phrases['ui.guilds'] + '</th>'
   tableContent += '</tr>'
 
   Object.keys(guilds).forEach(function (name) {
@@ -224,13 +224,12 @@ function generateLegendTable (players) {
 
     tableContent += '<tr class="legend-list-item ' + disabled + '" data-legend="' + guilds[name].id + '" onClick="toggleLegend(\'' + guilds[name].id + '\')">'
     tableContent += '<td style="background-color: ' + guilds[name].color + '"></td>'
-    tableContent += '<td>' + guilds[name].id + '</td>'
     tableContent += '<td>' + name + '</td>'
     tableContent += '</tr>'
   })
 
   tableContent += '<tr class="solo-list">'
-  tableContent += '<th colspan="3" class="text-center">' + language.phrases['ui.players_without_guild'] + '</th>'
+  tableContent += '<th colspan="2" class="text-center">' + language.phrases['ui.players_without_guild'] + '</th>'
   tableContent += '</tr>'
 
   Object.keys(solos).forEach(function (name) {
@@ -240,7 +239,6 @@ function generateLegendTable (players) {
     }
     tableContent += '<tr class="legend-list-item ' + disabled + '" data-legend="' + solos[name].id + '" onClick="toggleLegend(\'' + solos[name].id + '\')">'
     tableContent += '<td style="background-color: ' + solos[name].color + '"></td>'
-    tableContent += '<td>' + solos[name].id + '</td>'
     tableContent += '<td>' + name + '</td>'
     tableContent += '</tr>'
   })

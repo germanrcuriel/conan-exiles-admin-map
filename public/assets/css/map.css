@@ -37,14 +37,9 @@ html, body, #map { width:100%; height:100%; margin:0; padding:0; z-index: 1; bac
   width: 10%;
 }
 #legendList .table tr:nth-child(2) td:nth-child(2) {
-  width: 5%;
+  width: 90%;
 }
-#legendList .table tr:nth-child(2) td:nth-child(3) {
-  width: 50%;
-}
-#legendList .table tr:nth-child(2) td:nth-child(4) {
-  width: 30%;
-}
+
 #legendList .legend-list-item {
   cursor: pointer;
 }
@@ -56,57 +51,9 @@ html, body, #map { width:100%; height:100%; margin:0; padding:0; z-index: 1; bac
 .dropdown-item {
   cursor: pointer;
 }
-.dropdown-item.buildings-filter.active,
-.dropdown-item.buildings-filter:hover,
-.dropdown-item.buildings-filter:active {
+.dropdown-item.active,
+.dropdown-item:hover,
+.dropdown-item:active {
   background-color: blue;
-  color: white !important;
-}
-.dropdown-item.beds-filter.active,
-.dropdown-item.beds-filter:hover,
-.dropdown-item.beds-filter:active {
-  background-color: green;
-  color: white !important;
-}
-.dropdown-item.campfires-filter.active,
-.dropdown-item.campfires-filter:hover,
-.dropdown-item.campfires-filter:active {
-  background-color: orange;
-  color: white !important;
-}
-.dropdown-item.crabpots-filter.active,
-.dropdown-item.crabpots-filter:hover,
-.dropdown-item.crabpots-filter:active {
-  background-color: darkmagenta;
-  color: white !important;
-}
-.dropdown-item.fishnets-filter.active,
-.dropdown-item.fishnets-filter:hover,
-.dropdown-item.fishnets-filter:active {
-  background-color: darkcyan;
-  color: white !important;
-}
-.dropdown-item.pets-filter.active,
-.dropdown-item.pets-filter:hover,
-.dropdown-item.pets-filter:active {
-  background-color: pink;
-  color: black !important;
-}
-.dropdown-item.players-filter.active,
-.dropdown-item.players-filter:hover,
-.dropdown-item.players-filter:active {
-  background-color: red;
-  color: white !important;
-}
-.dropdown-item.pippi-filter.active,
-.dropdown-item.pippi-filter:hover,
-.dropdown-item.pippi-filter:active {
-  background-color: yellow;
-  color: black !important;
-}
-.dropdown-item.wheelsofpain-filter.active,
-.dropdown-item.wheelsofpain-filter:hover,
-.dropdown-item.wheelsofpain-filter:active {
-  background-color: salmon;
   color: white !important;
 }
