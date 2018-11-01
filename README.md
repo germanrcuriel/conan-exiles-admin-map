@@ -7,15 +7,24 @@ An admin dashboard for Conan Exiles
 ## Features
 
 - Ability to see the most important stuff placed over a map:
-  - Buildings (Foundations)
-  - Bedrolls / Beds
-  - Campfires / Bonfires
-  - Pets
-  - Fish nets
-  - Crab pots
   - Players
-  - Wheels of pain
-  - Pippi mod Thespians
+  - Pets
+  - All Crafting Placeables
+  - Altars
+  - Animal Pens
+  - Bedrolls / Beds
+  - Buildings (Foundations)
+  - Campfires / Bonfires
+  - Chests
+  - Map rooms
+  - Trebuchets
+  - Vaults
+  - Water wells
+  - Wheels of Pain
+  - Fish traps
+  - Shellfish traps
+  - All Pippi Placeables
+  - Pippi Thespians
 - You can zoom it in and out
 - You can get the `TeleportPlayer` command just by clicking in a marker
 - Possibility to filter by guilds or lonely players
@@ -27,7 +36,6 @@ An admin dashboard for Conan Exiles
 
 - Add steam family sharing support to detect multiaccounts.
 - Store statistics in an own sqlite database.
-- Translations
 - Autorefresh every n minutes if installed in the server or with an rsync script (or similar)
 - Custom filters with their own sql queries
 - Any more ideas? :P
