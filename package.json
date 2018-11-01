@@ -1,6 +1,6 @@
 {
   "name": "conan-exiles-admin-map",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Conan Exiles Admin Dashboard",
   "main": "src/conan-exiles-admin-map.js",
   "scripts": {
