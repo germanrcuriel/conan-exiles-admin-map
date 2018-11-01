@@ -162,8 +162,8 @@ export default {
 
   // Worktable
   "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan.BP_PL_WorkStation_Artisan_C": "Artisan's Worktable",
-  "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan_Khitai.BP_PL_WorkStation_Artisan_Khitai_C": "Khitan Artisan Table",
-  "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan_Aquilonia.BP_PL_WorkStation_Artisan_Aquilonia_C": "Aquilonian Artisan Table",
+  "/Game/DLC/DLC_Khitai/Blueprints/BP_PL_WorkStation_Artisan_Khitai.BP_PL_WorkStation_Artisan_Khitai_C": "Khitan Artisan Table",
+  "/Game/DLC/DLC_Aquilonia/Blueprints/BP_PL_WorkStation_Artisan_Aquilonia.BP_PL_WorkStation_Artisan_Aquilonia_C": "Aquilonian Artisan Table",
   "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Slaver.BP_PL_WorkStation_Slaver_C": "Torturer's Worktable"
 
 }

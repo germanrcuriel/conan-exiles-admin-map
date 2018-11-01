@@ -19,7 +19,7 @@ export default {
   "/Game/Systems/Building/Placeables/BP_PL_Altar_JhebbalSag.BP_PL_Altar_JhebbalSag_C": "Círculo de Jhebbal Sag",
   "/Game/Systems/Building/Placeables/BP_PL_Altar_JhebbalSag_T2.BP_PL_Altar_JhebbalSag_T2_C": "Refugio de Jhebbal Sag",
   "/Game/Systems/Building/Placeables/BP_PL_Altar_JhebbalSag_T3.BP_PL_Altar_JhebbalSag_T3_C": "Arboleda de JhebbalSag",
-  
+
   // Animal Pen
   "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_1.BP_PL_Crafting_Station_AnimalPen_Tier_1_C": "Corral",
   "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_2.BP_PL_Crafting_Station_AnimalPen_Tier_2_C": "Corral reforzado",
@@ -162,8 +162,8 @@ export default {
 
   // Worktable
   "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan.BP_PL_WorkStation_Artisan_C": "Mesa de artesano",
-  "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan_Khitai.BP_PL_WorkStation_Artisan_Khitai_C": "Mesa de artesano khitia",
-  "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan_Aquilonia.BP_PL_WorkStation_Artisan_Aquilonia_C": "Mesa de artesano aquilonia",
+  "/Game/DLC/DLC_Khitai/Blueprints/BP_PL_WorkStation_Artisan_Khitai.BP_PL_WorkStation_Artisan_Khitai_C": "Mesa de artesano khitia",
+  "/Game/DLC/DLC_Aquilonia/Blueprints/BP_PL_WorkStation_Artisan_Aquilonia.BP_PL_WorkStation_Artisan_Aquilonia_C": "Mesa de artesano aquilonia",
   "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Slaver.BP_PL_WorkStation_Slaver_C": "Mesa de trabajo de torturador"
 
 }
