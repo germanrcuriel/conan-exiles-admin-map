@@ -33,15 +33,28 @@
               <%= lang['ui.filters'] %>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item buildings-filter" onClick="toggleFilter('buildings')"><%= lang['ui.buildings'] %></a>
-            <a class="dropdown-item beds-filter" onClick="toggleFilter('beds')"><%= lang['ui.beds'] %></a>
-            <a class="dropdown-item campfires-filter" onClick="toggleFilter('campfires')"><%= lang['ui.campfires'] %></a>
-            <a class="dropdown-item wheelsofpain-filter" onClick="toggleFilter('wheelsofpain')"><%= lang['ui.wheels_of_pain'] %></a>
-            <a class="dropdown-item players-filter" onClick="toggleFilter('players')"><%= lang['ui.players'] %></a>
-            <a class="dropdown-item pets-filter" onClick="toggleFilter('pets')"><%= lang['ui.pets'] %></a>
-            <a class="dropdown-item fishnets-filter" onClick="toggleFilter('fishnets')"><%= lang['ui.fish_nets'] %></a>
-            <a class="dropdown-item crabpots-filter" onClick="toggleFilter('crabpots')"><%= lang['ui.crab_pots'] %></a>
-            <a class="dropdown-item pippi-filter" onClick="toggleFilter('pippi/thespians')"><%= lang['ui.pippi_thespians'] %></a>
+              <a class="dropdown-item crafting-filter" onClick="toggleFilter('crafting')"><%= lang['ui.crafting'] %></a>
+              <a class="dropdown-item altars-filter" onClick="toggleFilter('altars')"><%= lang['ui.altars'] %></a>
+              <a class="dropdown-item animalpens-filter" onClick="toggleFilter('animalpens')"><%= lang['ui.animal_pens'] %></a>
+              <a class="dropdown-item beds-filter" onClick="toggleFilter('beds')"><%= lang['ui.beds'] %></a>
+              <a class="dropdown-item buildings-filter" onClick="toggleFilter('buildings')"><%= lang['ui.buildings'] %></a>
+              <a class="dropdown-item campfires-filter" onClick="toggleFilter('campfires')"><%= lang['ui.campfires'] %></a>
+              <a class="dropdown-item chests-filter" onClick="toggleFilter('chests')"><%= lang['ui.chests'] %></a>
+              <a class="dropdown-item maprooms-filter" onClick="toggleFilter('maprooms')"><%= lang['ui.map_rooms'] %></a>
+              <a class="dropdown-item trebuchets-filter" onClick="toggleFilter('trebuchets')"><%= lang['ui.trebuchets'] %></a>
+              <a class="dropdown-item vaults-filter" onClick="toggleFilter('vaults')"><%= lang['ui.vaults'] %></a>
+              <a class="dropdown-item waterwells-filter" onClick="toggleFilter('waterwells')"><%= lang['ui.water_wells'] %></a>
+              <a class="dropdown-item wheelsofpain-filter" onClick="toggleFilter('wheelsofpain')"><%= lang['ui.wheels_of_pain'] %></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item crabpots-filter" onClick="toggleFilter('crabpots')"><%= lang['ui.crab_pots'] %></a>
+              <a class="dropdown-item fishnets-filter" onClick="toggleFilter('fishnets')"><%= lang['ui.fish_nets'] %></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item players-filter" onClick="toggleFilter('players')"><%= lang['ui.players'] %></a>
+              <a class="dropdown-item pets-filter" onClick="toggleFilter('pets')"><%= lang['ui.pets'] %></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item pippiall-filter" onClick="toggleFilter('pippi/all')"><%= lang['ui.pippi_all'] %></a>
+              <a class="dropdown-item pippi-filter" onClick="toggleFilter('pippi/thespians')"><%= lang['ui.pippi_thespians'] %></a>
+            </div>
           </li>
         </ul>
       </div>
@@ -90,7 +103,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <table class="table table-hover table-responsive">
+            <table class="table table-hover">
               <tbody class="legend-list-table">
               </tbody>
             </table>
