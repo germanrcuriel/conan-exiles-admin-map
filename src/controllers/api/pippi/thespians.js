@@ -8,7 +8,7 @@ class PippiThespiansController {
   async getAll (req, res) {
     try {
       const db = await sqlite.open(res.database.file, { mode: sqlite.OPEN_READONLY })
-      const data = await db.all(queries.pippi)
+      const data = await db.all(queries.pippiThespians)
 
       data.map((pippi) => {
         pippi.name = getPippiMobName(pippi)
