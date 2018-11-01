@@ -153,7 +153,7 @@ export default {
   // Water well
   "/Game/Systems/Building/Placeables/BP_PL_Water_Well_Tier2.BP_PL_Water_Well_Tier2_C": "Pozo de agua",
   "/Game/Systems/Building/Placeables/BP_PL_Water_Well_Large.BP_PL_Water_Well_Large_C": "Pozo de agua grande",
-  "/Game/Systems/Building/Placeables/BP_PL_Water_Well_MitraStatue.BP_PL_Water_Well_MitraStatue_C": "Estatus refrescante",
+  "/Game/Systems/Building/Placeables/BP_PL_Water_Well_MitraStatue.BP_PL_Water_Well_MitraStatue_C": "Estatua refrescante",
 
   // Wheel of pain
   "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPain.BP_PL_CraftingStation_WheelOfPain_C": "Rueda del dolor inferior",
