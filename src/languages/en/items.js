@@ -141,6 +141,9 @@ export default {
   // Tent
   "/Game/Systems/Building/Placeables/BP_PL_SurvivalistTent.BP_PL_SurvivalistTent_C": "Simple Tent",
 
+  // Throne
+  "/Game/Systems/Building/Placeables/BP_PL_Chair_Throne.BP_PL_Chair_Throne_C": "Throne",
+
   // Trebuchet
   "/Game/Systems/Building/Placeables/Trebuchet/Trebuchet_V2/BP_V2_Trebuchet_Foundation.BP_V2_Trebuchet_Foundation_C": "Siege Foundation",
   "/Game/Systems/Building/Placeables/Trebuchet/Trebuchet_V2/BP_V2_Trebuchet_Base.BP_V2_Trebuchet_Base_C": "Trebuchet Base",

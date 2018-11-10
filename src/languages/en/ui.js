@@ -7,6 +7,7 @@ export default {
 
   "crafting": "All Crafting Placeables",
   "altars": "Altars",
+  "thrones": "Thrones",
   "animal_pens": "Animal Pens",
   "buildings": "Buildings (Foundation groups)",
   "beds": "Bedrolls / Beds",

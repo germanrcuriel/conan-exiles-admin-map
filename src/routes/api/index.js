@@ -2,6 +2,7 @@ const apiRoutes = (app) => {
 
   require('./all')(app)
   require('./altars')(app)
+  require('./thrones')(app)
   require('./animalpens')(app)
   require('./beds')(app)
   require('./buildings')(app)

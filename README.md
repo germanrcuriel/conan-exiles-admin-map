@@ -11,6 +11,7 @@ An admin dashboard for Conan Exiles
   - Pets
   - All Crafting Placeables
   - Altars
+  - Thrones
   - Animal Pens
   - Bedrolls / Beds
   - Buildings (Foundations)

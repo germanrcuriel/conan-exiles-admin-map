@@ -7,6 +7,7 @@ export default {
 
   "crafting": "Todas las estaciones de Crafteo",
   "altars": "Altares",
+  "thrones": "Tronos",
   "animal_pens": "Corrales",
   "buildings": "Edificios (Grupos de cimientos)",
   "beds": "Petates / Camas",
