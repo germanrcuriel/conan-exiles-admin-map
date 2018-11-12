@@ -6,6 +6,7 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     where b.owner_id > 0
     and ap.class like '%BP_PL_Altar%'
+    and ap.class like '%BP_PL_Chair_Throne%'
     or ap.class like '%BP_PL_Bed_%'
     or ap.class like '%BP_PL_Bedroll_%'
     or ap.class like '%BP_PL_Crafting%'
@@ -135,6 +136,14 @@ module.exports = {
     left outer join guilds as g on g.guildid = c.guild
     left outer join actor_position as ap on ap.id = c.id
     order by last_online desc
+  `,
+  thrones: `
+    select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
+    left outer join actor_position as ap on b.object_id = ap.id
+    left outer join guilds as g on g.guildid = b.owner_id
+    left outer join characters as c on c.id = b.owner_id
+    where b.owner_id > 0
+    and ap.class like '%BP_PL_Chair_Throne%'
   `,
   trebuchets: `
     select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
