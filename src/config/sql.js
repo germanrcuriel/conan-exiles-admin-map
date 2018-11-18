@@ -6,9 +6,9 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     where b.owner_id > 0
     and ap.class like '%BP_PL_Altar%'
-    and ap.class like '%BP_PL_Chair_Throne%'
     or ap.class like '%BP_PL_Bed_%'
     or ap.class like '%BP_PL_Bedroll_%'
+    or ap.class like '%BP_PL_Chair_Throne%'
     or ap.class like '%BP_PL_Crafting%'
     or ap.class like '%BuildFoundation%'
     or ap.class like '%BuildTriangleFoundation%'
