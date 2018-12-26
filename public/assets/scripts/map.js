@@ -271,7 +271,10 @@ function generatePlayerTable (players) {
   var tableContent = ''
 
   players.forEach(function (player) {
-    tableContent += '<tr class="player-list-item">'
+    var bgcolor = '#FFFFFF'
+    if (player.online == 1)
+      bgcolor='#FFFFAA'
+    tableContent += '<tr class="player-list-item" bgcolor="' + bgcolor +'">'
     tableContent += '<td>' + player.char_name + '</td>'
     tableContent += '<td>' + player.guild_name + '</td>'
     tableContent += '<td>' + player.rank + '</td>'
