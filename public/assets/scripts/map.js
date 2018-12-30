@@ -105,6 +105,9 @@ function drawData (kind) {
       } else if (marker.info) {
         marker.color = 'yellow'
       }
+      if (marker.online == 1) {
+        marker.stroke= 'white'
+      }
 
       marker.tooltip = getTooltipContent(marker)
 
