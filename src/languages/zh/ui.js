@@ -2,7 +2,7 @@
 
 export default {
   "filters": "过滤",
-  "legend": "传说",
+  "legend": "图例",
   "player_list": "玩家列表",
   "view_all": "查看全部",
   "last_update": "上次更新: ",
